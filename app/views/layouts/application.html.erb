@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Books</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <nav>
+<li><%=link_to 'Tags', new_tag_path %></li>
+<li><%=link_to 'Books', root_path %></li>
+  </nav>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+<%=form_for @book do |b| %>
+
+<%= collection_check_boxes(:book, :tag_ids, @tags, :id,  :name, checked: true, multiple: true)%>
+  <br>
+  <%= b.submit %>
+  <% end %>
+

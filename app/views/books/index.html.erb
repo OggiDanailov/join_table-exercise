@@ -1,0 +1,20 @@
+
+<hr>
+<div class="results">
+
+</div>
+<%@books.each do |b| %>
+<a href='/books/<%=b.id %>'><%= b.title %></a>
+
+<br>
+
+<%end %>
+
+
+<div class="tag-dropdown">
+	<select class="tags" name="">
+		<% Tag.all.each do |tag| %>
+			<option value="<%=tag.name%>"><%= tag.name %></option>
+		<% end %>
+	</select>
+</div>
